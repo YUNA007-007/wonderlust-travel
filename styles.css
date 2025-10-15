@@ -489,7 +489,6 @@ small {
         grid-template-columns: 1fr;
     }
     #intro img, #intro small {
-        text-align: center;
         display: block;
         margin: 0 auto;
     }
@@ -507,3 +506,19 @@ small {
         grid-row: 5/6;
     }
 }
+.skip-links a {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
